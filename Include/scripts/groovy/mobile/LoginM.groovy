@@ -101,13 +101,12 @@ class LoginM {
 	@And("Users Do Input blank password mobile (.*)")
 	def InputBlankPassword(String password) {
 		Mobile.tap(loginMobile.inputPassword(), 30)
-		Mobile.pressBack()
 	}
 
-	@And("Users Input password mobile less than 6 characters (.*)")
+	@And("Users input password mobile less than 6 characters (.*)")
 	def InputPasswordLessThan(String password) {
 		Mobile.tap(loginMobile.inputPassword(), 30)
-		Mobile.pressBack()
+		Mobile.setText(loginMobile.inputPassword(), password, 30)
 	}
 
 	@And("Users click button login Mobile")

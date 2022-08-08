@@ -84,7 +84,7 @@ Feature: Scenario Login From Mobile Android
 	Scenario Outline: User login dengan kondisi email benar dan password benar di Mobile
     Given Users is on login screen mobile
     When Users Do Input email mobile <email>
-    And Users Input password mobile less than 6 characters <password>
+    And Users input password mobile less than 6 characters <password>
     And Users click button login Mobile
     Then Users Can See Showing alerts mobile <status>
 

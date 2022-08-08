@@ -49,9 +49,9 @@ class RegisterM {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	
+
 	RegisterMObject registermobile = new RegisterMObject()
-	
+
 	@Given("Users is on Register screen")
 	def ClickIconLogin() {
 		Mobile.startExistingApplication('com.she.sehatq')
@@ -66,52 +66,52 @@ class RegisterM {
 		Mobile.tap(registermobile.inputNamaLengkap(), 30)
 		Mobile.setText(registermobile.inputNamaLengkap(), fullname, 30)
 	}
-	
+
 	@When("Users Input blank full name (.*)")
 	def InputBlankFullname(String fullname) {
 		Mobile.tap(registermobile.inputNamaLengkap(), 30)
 	}
-	
+
 	@And("Users Input email (.*)")
 	def InputEmail(String email) {
 		Mobile.tap(registermobile.inputEmail(), 30)
 		Mobile.setText(registermobile.inputEmail(), email, 30)
 	}
-	
+
 	@And("Users Input blank email (.*)")
 	def InputBlankEmail(String email) {
 		Mobile.tap(registermobile.inputEmail(), 30)
 	}
-	
+
 	@And("Users Input Email already registered (.*)")
 	def InputEmailAlreadyRegistered(String email) {
 		Mobile.tap(registermobile.inputEmail(), 30)
 		Mobile.setText(registermobile.inputEmail(), email, 30)
 	}
-	
+
 	@And("Users Input password (.*)")
 	def InputPassword(String password) {
 		Mobile.tap(registermobile.inputPassword(), 30)
 		Mobile.setText(registermobile.inputPassword(), password, 30)
 	}
-	
+
 	@And("Users Input blank password (.*)")
 	def InputBlankPassword(String password) {
 		Mobile.tap(registermobile.inputPassword(), 30)
 	}
-	
+
 	@And("Users Input Password less more than 6 (.*)")
 	def InputPasswordLessMoreThanSix(String password) {
 		Mobile.tap(registermobile.inputPassword(), 30)
 		Mobile.setText(registermobile.inputPassword(), password, 30)
 	}
-	
+
 	@And("Users checkbox Terms and Privacy Policy")
 	def ClickTermsAndPolicy() {
 		Mobile.pressBack()
 		Mobile.tap(registermobile.btnCheckbox(), 30)
 	}
-	
+
 	@And("Users click button daftar")
 	def ClickButtonLogin() {
 		Mobile.tap(registermobile.btnDaftarRegister(), 30)
@@ -155,6 +155,4 @@ class RegisterM {
 			Mobile.comment('Tidak ada pilihan')
 		}
 	}
-	
-	
 }

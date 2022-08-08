@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>c6afd36c-c732-4328-b637-b98eb29cf8aa</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Mobile/Login Mobile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -28,7 +28,7 @@
    <testCaseLink>
       <guid>39c0d396-0a96-4255-bc10-8491b6619529</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Mobile/Edit Profile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
