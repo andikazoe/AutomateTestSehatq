@@ -68,7 +68,7 @@ Feature: Scenario Login From Mobile Android
       
       
   @tag6
-	Scenario Outline: User login dengan kondisi email benar dan password benar di Mobile
+	Scenario Outline: User login dengan kondisi password kosong
 		Given Users is on login screen mobile
     When Users Do Input email mobile <email>
     And Users Do Input blank password mobile <password>
@@ -81,7 +81,7 @@ Feature: Scenario Login From Mobile Android
       
       
   @tag7
-	Scenario Outline: User login dengan kondisi email benar dan password benar di Mobile
+	Scenario Outline: Login menggunakan dengan kondisi password kurang dari 6 karakter
     Given Users is on login screen mobile
     When Users Do Input email mobile <email>
     And Users input password mobile less than 6 characters <password>
